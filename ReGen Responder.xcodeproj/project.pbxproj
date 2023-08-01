@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		340714F62A7F30F800C2619B /* TreatmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340714F52A7F30F800C2619B /* TreatmentView.swift */; };
+		340714F82A7F310900C2619B /* TreatmentHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340714F72A7F310900C2619B /* TreatmentHelper.swift */; };
+		34673F6E2A78F4240027140E /* ReGen_ResponderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34673F6D2A78F4240027140E /* ReGen_ResponderApp.swift */; };
+		34673F702A78F4240027140E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34673F6F2A78F4240027140E /* ContentView.swift */; };
+		34673F722A78F4260027140E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34673F712A78F4260027140E /* Assets.xcassets */; };
+		34673F752A78F4260027140E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34673F742A78F4260027140E /* Preview Assets.xcassets */; };
+		34673F7F2A78F4260027140E /* ReGen_ResponderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34673F7E2A78F4260027140E /* ReGen_ResponderTests.swift */; };
+		34673F892A78F4260027140E /* ReGen_ResponderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34673F882A78F4260027140E /* ReGen_ResponderUITests.swift */; };
+		34673F8B2A78F4260027140E /* ReGen_ResponderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34673F8A2A78F4260027140E /* ReGen_ResponderUITestsLaunchTests.swift */; };
+		34673F992A790BF60027140E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 34673F982A790BF60027140E /* FirebaseFirestore */; };
+		34673F9B2A790BF60027140E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 34673F9A2A790BF60027140E /* FirebaseStorage */; };
+		34673F9D2A790C360027140E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34673F9C2A790C360027140E /* GoogleService-Info.plist */; };
+		349493662A7CD7E6008DDC46 /* BrokenBonesQ2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349493652A7CD7E6008DDC46 /* BrokenBonesQ2.swift */; };
+		349493692A7CD810008DDC46 /* PunctureWoundsQ1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349493682A7CD810008DDC46 /* PunctureWoundsQ1.swift */; };
+		3494936E2A7CD849008DDC46 /* CutsQ1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3494936D2A7CD849008DDC46 /* CutsQ1.swift */; };
+		349493702A7CD84E008DDC46 /* CutsQ2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3494936F2A7CD84E008DDC46 /* CutsQ2.swift */; };
+		349493732A7CD87A008DDC46 /* HeartOrLungQ1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349493722A7CD87A008DDC46 /* HeartOrLungQ1.swift */; };
+		349493752A7CD880008DDC46 /* HeartOrLungQ2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349493742A7CD880008DDC46 /* HeartOrLungQ2.swift */; };
+		349493772A7CD884008DDC46 /* HeartOrLungQ3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349493762A7CD884008DDC46 /* HeartOrLungQ3.swift */; };
+		3494937A2A7CD8A3008DDC46 /* SeizureQ1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349493792A7CD8A3008DDC46 /* SeizureQ1.swift */; };
+		3494937C2A7CD8A9008DDC46 /* SeizureQ2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3494937B2A7CD8A9008DDC46 /* SeizureQ2.swift */; };
+		349493802A7CDAA4008DDC46 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3494937F2A7CDAA4008DDC46 /* FirebaseDatabase */; };
+		34B83B712A7B2CF7006019ED /* BrokenBonesQ1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B83B702A7B2CF7006019ED /* BrokenBonesQ1.swift */; };
+		34B83B732A7B2D2C006019ED /* callHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B83B722A7B2D2C006019ED /* callHelper.swift */; };
+		34C567D12A7DFFE000840C9B /* medicalTreatments.json in Resources */ = {isa = PBXBuildFile; fileRef = 34C567D02A7DFFE000840C9B /* medicalTreatments.json */; };
+		34CD26442A80D184009CA8A5 /* locationUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CD26432A80D184009CA8A5 /* locationUpdater.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34673F7B2A78F4260027140E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34673F622A78F4240027140E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34673F692A78F4240027140E;
+			remoteInfo = "ReGen Responder";
+		};
+		34673F852A78F4260027140E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34673F622A78F4240027140E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34673F692A78F4240027140E;
+			remoteInfo = "ReGen Responder";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		340714F52A7F30F800C2619B /* TreatmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentView.swift; sourceTree = "<group>"; };
+		340714F72A7F310900C2619B /* TreatmentHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentHelper.swift; sourceTree = "<group>"; };
+		34673F6A2A78F4240027140E /* ReGen Responder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReGen Responder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34673F6D2A78F4240027140E /* ReGen_ResponderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReGen_ResponderApp.swift; sourceTree = "<group>"; };
+		34673F6F2A78F4240027140E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		34673F712A78F4260027140E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34673F742A78F4260027140E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		34673F7A2A78F4260027140E /* ReGen ResponderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReGen ResponderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34673F7E2A78F4260027140E /* ReGen_ResponderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReGen_ResponderTests.swift; sourceTree = "<group>"; };
+		34673F842A78F4260027140E /* ReGen ResponderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReGen ResponderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34673F882A78F4260027140E /* ReGen_ResponderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReGen_ResponderUITests.swift; sourceTree = "<group>"; };
+		34673F8A2A78F4260027140E /* ReGen_ResponderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReGen_ResponderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		34673F9C2A790C360027140E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		349493652A7CD7E6008DDC46 /* BrokenBonesQ2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenBonesQ2.swift; sourceTree = "<group>"; };
+		349493682A7CD810008DDC46 /* PunctureWoundsQ1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunctureWoundsQ1.swift; sourceTree = "<group>"; };
+		3494936D2A7CD849008DDC46 /* CutsQ1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutsQ1.swift; sourceTree = "<group>"; };
+		3494936F2A7CD84E008DDC46 /* CutsQ2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutsQ2.swift; sourceTree = "<group>"; };
+		349493722A7CD87A008DDC46 /* HeartOrLungQ1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartOrLungQ1.swift; sourceTree = "<group>"; };
+		349493742A7CD880008DDC46 /* HeartOrLungQ2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartOrLungQ2.swift; sourceTree = "<group>"; };
+		349493762A7CD884008DDC46 /* HeartOrLungQ3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartOrLungQ3.swift; sourceTree = "<group>"; };
+		349493792A7CD8A3008DDC46 /* SeizureQ1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeizureQ1.swift; sourceTree = "<group>"; };
+		3494937B2A7CD8A9008DDC46 /* SeizureQ2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeizureQ2.swift; sourceTree = "<group>"; };
+		3494937D2A7CD9CA008DDC46 /* ReGen-Responder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ReGen-Responder-Info.plist"; sourceTree = SOURCE_ROOT; };
+		34B83B702A7B2CF7006019ED /* BrokenBonesQ1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenBonesQ1.swift; sourceTree = "<group>"; };
+		34B83B722A7B2D2C006019ED /* callHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = callHelper.swift; sourceTree = "<group>"; };
+		34C567D02A7DFFE000840C9B /* medicalTreatments.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = medicalTreatments.json; sourceTree = "<group>"; };
+		34CD26432A80D184009CA8A5 /* locationUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationUpdater.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34673F672A78F4240027140E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				349493802A7CDAA4008DDC46 /* FirebaseDatabase in Frameworks */,
+				34673F992A790BF60027140E /* FirebaseFirestore in Frameworks */,
+				34673F9B2A790BF60027140E /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34673F772A78F4260027140E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34673F812A78F4260027140E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34673F612A78F4240027140E = {
+			isa = PBXGroup;
+			children = (
+				34673F6C2A78F4240027140E /* ReGen Responder */,
+				34673F7D2A78F4260027140E /* ReGen ResponderTests */,
+				34673F872A78F4260027140E /* ReGen ResponderUITests */,
+				34673F6B2A78F4240027140E /* Products */,
+				3494937E2A7CDAA4008DDC46 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		34673F6B2A78F4240027140E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34673F6A2A78F4240027140E /* ReGen Responder.app */,
+				34673F7A2A78F4260027140E /* ReGen ResponderTests.xctest */,
+				34673F842A78F4260027140E /* ReGen ResponderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34673F6C2A78F4240027140E /* ReGen Responder */ = {
+			isa = PBXGroup;
+			children = (
+				3494937D2A7CD9CA008DDC46 /* ReGen-Responder-Info.plist */,
+				34673F6D2A78F4240027140E /* ReGen_ResponderApp.swift */,
+				34673F6F2A78F4240027140E /* ContentView.swift */,
+				34B83B722A7B2D2C006019ED /* callHelper.swift */,
+				34CD26432A80D184009CA8A5 /* locationUpdater.swift */,
+				34B83B6E2A7B2C8F006019ED /* Diagnosis */,
+				34C567CF2A7DFEE800840C9B /* Treatment */,
+				34673F712A78F4260027140E /* Assets.xcassets */,
+				34673F9C2A790C360027140E /* GoogleService-Info.plist */,
+				34673F732A78F4260027140E /* Preview Content */,
+			);
+			path = "ReGen Responder";
+			sourceTree = "<group>";
+		};
+		34673F732A78F4260027140E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				34673F742A78F4260027140E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		34673F7D2A78F4260027140E /* ReGen ResponderTests */ = {
+			isa = PBXGroup;
+			children = (
+				34673F7E2A78F4260027140E /* ReGen_ResponderTests.swift */,
+			);
+			path = "ReGen ResponderTests";
+			sourceTree = "<group>";
+		};
+		34673F872A78F4260027140E /* ReGen ResponderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				34673F882A78F4260027140E /* ReGen_ResponderUITests.swift */,
+				34673F8A2A78F4260027140E /* ReGen_ResponderUITestsLaunchTests.swift */,
+			);
+			path = "ReGen ResponderUITests";
+			sourceTree = "<group>";
+		};
+		349493672A7CD7FC008DDC46 /* Puncture Wounds */ = {
+			isa = PBXGroup;
+			children = (
+				349493682A7CD810008DDC46 /* PunctureWoundsQ1.swift */,
+			);
+			path = "Puncture Wounds";
+			sourceTree = "<group>";
+		};
+		3494936C2A7CD839008DDC46 /* Cuts */ = {
+			isa = PBXGroup;
+			children = (
+				3494936D2A7CD849008DDC46 /* CutsQ1.swift */,
+				3494936F2A7CD84E008DDC46 /* CutsQ2.swift */,
+			);
+			path = Cuts;
+			sourceTree = "<group>";
+		};
+		349493712A7CD867008DDC46 /* Heart or Lung */ = {
+			isa = PBXGroup;
+			children = (
+				349493722A7CD87A008DDC46 /* HeartOrLungQ1.swift */,
+				349493742A7CD880008DDC46 /* HeartOrLungQ2.swift */,
+				349493762A7CD884008DDC46 /* HeartOrLungQ3.swift */,
+			);
+			path = "Heart or Lung";
+			sourceTree = "<group>";
+		};
+		349493782A7CD88E008DDC46 /* Seizure */ = {
+			isa = PBXGroup;
+			children = (
+				349493792A7CD8A3008DDC46 /* SeizureQ1.swift */,
+				3494937B2A7CD8A9008DDC46 /* SeizureQ2.swift */,
+			);
+			path = Seizure;
+			sourceTree = "<group>";
+		};
+		3494937E2A7CDAA4008DDC46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34B83B6E2A7B2C8F006019ED /* Diagnosis */ = {
+			isa = PBXGroup;
+			children = (
+				34B83B6F2A7B2CEB006019ED /* Broken Bones */,
+				349493672A7CD7FC008DDC46 /* Puncture Wounds */,
+				3494936C2A7CD839008DDC46 /* Cuts */,
+				349493712A7CD867008DDC46 /* Heart or Lung */,
+				349493782A7CD88E008DDC46 /* Seizure */,
+			);
+			path = Diagnosis;
+			sourceTree = "<group>";
+		};
+		34B83B6F2A7B2CEB006019ED /* Broken Bones */ = {
+			isa = PBXGroup;
+			children = (
+				34B83B702A7B2CF7006019ED /* BrokenBonesQ1.swift */,
+				349493652A7CD7E6008DDC46 /* BrokenBonesQ2.swift */,
+			);
+			path = "Broken Bones";
+			sourceTree = "<group>";
+		};
+		34C567CF2A7DFEE800840C9B /* Treatment */ = {
+			isa = PBXGroup;
+			children = (
+				340714F52A7F30F800C2619B /* TreatmentView.swift */,
+				340714F72A7F310900C2619B /* TreatmentHelper.swift */,
+				34C567D02A7DFFE000840C9B /* medicalTreatments.json */,
+			);
+			path = Treatment;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34673F692A78F4240027140E /* ReGen Responder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34673F8E2A78F4260027140E /* Build configuration list for PBXNativeTarget "ReGen Responder" */;
+			buildPhases = (
+				34673F662A78F4240027140E /* Sources */,
+				34673F672A78F4240027140E /* Frameworks */,
+				34673F682A78F4240027140E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ReGen Responder";
+			packageProductDependencies = (
+				34673F982A790BF60027140E /* FirebaseFirestore */,
+				34673F9A2A790BF60027140E /* FirebaseStorage */,
+				3494937F2A7CDAA4008DDC46 /* FirebaseDatabase */,
+			);
+			productName = "ReGen Responder";
+			productReference = 34673F6A2A78F4240027140E /* ReGen Responder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		34673F792A78F4260027140E /* ReGen ResponderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34673F912A78F4260027140E /* Build configuration list for PBXNativeTarget "ReGen ResponderTests" */;
+			buildPhases = (
+				34673F762A78F4260027140E /* Sources */,
+				34673F772A78F4260027140E /* Frameworks */,
+				34673F782A78F4260027140E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34673F7C2A78F4260027140E /* PBXTargetDependency */,
+			);
+			name = "ReGen ResponderTests";
+			productName = "ReGen ResponderTests";
+			productReference = 34673F7A2A78F4260027140E /* ReGen ResponderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		34673F832A78F4260027140E /* ReGen ResponderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34673F942A78F4260027140E /* Build configuration list for PBXNativeTarget "ReGen ResponderUITests" */;
+			buildPhases = (
+				34673F802A78F4260027140E /* Sources */,
+				34673F812A78F4260027140E /* Frameworks */,
+				34673F822A78F4260027140E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34673F862A78F4260027140E /* PBXTargetDependency */,
+			);
+			name = "ReGen ResponderUITests";
+			productName = "ReGen ResponderUITests";
+			productReference = 34673F842A78F4260027140E /* ReGen ResponderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34673F622A78F4240027140E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					34673F692A78F4240027140E = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					34673F792A78F4260027140E = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 34673F692A78F4240027140E;
+					};
+					34673F832A78F4260027140E = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 34673F692A78F4240027140E;
+					};
+				};
+			};
+			buildConfigurationList = 34673F652A78F4240027140E /* Build configuration list for PBXProject "ReGen Responder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34673F612A78F4240027140E;
+			packageReferences = (
+				34673F972A790BF60027140E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 34673F6B2A78F4240027140E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34673F692A78F4240027140E /* ReGen Responder */,
+				34673F792A78F4260027140E /* ReGen ResponderTests */,
+				34673F832A78F4260027140E /* ReGen ResponderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34673F682A78F4240027140E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34C567D12A7DFFE000840C9B /* medicalTreatments.json in Resources */,
+				34673F752A78F4260027140E /* Preview Assets.xcassets in Resources */,
+				34673F722A78F4260027140E /* Assets.xcassets in Resources */,
+				34673F9D2A790C360027140E /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34673F782A78F4260027140E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34673F822A78F4260027140E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34673F662A78F4240027140E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				349493752A7CD880008DDC46 /* HeartOrLungQ2.swift in Sources */,
+				349493772A7CD884008DDC46 /* HeartOrLungQ3.swift in Sources */,
+				3494936E2A7CD849008DDC46 /* CutsQ1.swift in Sources */,
+				340714F82A7F310900C2619B /* TreatmentHelper.swift in Sources */,
+				349493732A7CD87A008DDC46 /* HeartOrLungQ1.swift in Sources */,
+				34673F702A78F4240027140E /* ContentView.swift in Sources */,
+				349493702A7CD84E008DDC46 /* CutsQ2.swift in Sources */,
+				349493662A7CD7E6008DDC46 /* BrokenBonesQ2.swift in Sources */,
+				34B83B712A7B2CF7006019ED /* BrokenBonesQ1.swift in Sources */,
+				349493692A7CD810008DDC46 /* PunctureWoundsQ1.swift in Sources */,
+				340714F62A7F30F800C2619B /* TreatmentView.swift in Sources */,
+				3494937A2A7CD8A3008DDC46 /* SeizureQ1.swift in Sources */,
+				34673F6E2A78F4240027140E /* ReGen_ResponderApp.swift in Sources */,
+				3494937C2A7CD8A9008DDC46 /* SeizureQ2.swift in Sources */,
+				34B83B732A7B2D2C006019ED /* callHelper.swift in Sources */,
+				34CD26442A80D184009CA8A5 /* locationUpdater.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34673F762A78F4260027140E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34673F7F2A78F4260027140E /* ReGen_ResponderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34673F802A78F4260027140E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34673F892A78F4260027140E /* ReGen_ResponderUITests.swift in Sources */,
+				34673F8B2A78F4260027140E /* ReGen_ResponderUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34673F7C2A78F4260027140E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34673F692A78F4240027140E /* ReGen Responder */;
+			targetProxy = 34673F7B2A78F4260027140E /* PBXContainerItemProxy */;
+		};
+		34673F862A78F4260027140E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34673F692A78F4240027140E /* ReGen Responder */;
+			targetProxy = 34673F852A78F4260027140E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		34673F8C2A78F4260027140E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		34673F8D2A78F4260027140E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34673F8F2A78F4260027140E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ReGen Responder/Preview Content\"";
+				DEVELOPMENT_TEAM = GV3L8TFW84;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ReGen-Responder-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = ReGen;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This is used to upload the robots location to the server.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eamonkendall.ReGen-Responder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		34673F902A78F4260027140E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ReGen Responder/Preview Content\"";
+				DEVELOPMENT_TEAM = GV3L8TFW84;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ReGen-Responder-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = ReGen;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This is used to upload the robots location to the server.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eamonkendall.ReGen-Responder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		34673F922A78F4260027140E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GV3L8TFW84;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eamonkendall.ReGen-ResponderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReGen Responder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ReGen Responder";
+			};
+			name = Debug;
+		};
+		34673F932A78F4260027140E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GV3L8TFW84;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eamonkendall.ReGen-ResponderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReGen Responder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ReGen Responder";
+			};
+			name = Release;
+		};
+		34673F952A78F4260027140E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GV3L8TFW84;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eamonkendall.ReGen-ResponderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ReGen Responder";
+			};
+			name = Debug;
+		};
+		34673F962A78F4260027140E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GV3L8TFW84;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eamonkendall.ReGen-ResponderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ReGen Responder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34673F652A78F4240027140E /* Build configuration list for PBXProject "ReGen Responder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34673F8C2A78F4260027140E /* Debug */,
+				34673F8D2A78F4260027140E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34673F8E2A78F4260027140E /* Build configuration list for PBXNativeTarget "ReGen Responder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34673F8F2A78F4260027140E /* Debug */,
+				34673F902A78F4260027140E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34673F912A78F4260027140E /* Build configuration list for PBXNativeTarget "ReGen ResponderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34673F922A78F4260027140E /* Debug */,
+				34673F932A78F4260027140E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34673F942A78F4260027140E /* Build configuration list for PBXNativeTarget "ReGen ResponderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34673F952A78F4260027140E /* Debug */,
+				34673F962A78F4260027140E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		34673F972A790BF60027140E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		34673F982A790BF60027140E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34673F972A790BF60027140E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		34673F9A2A790BF60027140E /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34673F972A790BF60027140E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		3494937F2A7CDAA4008DDC46 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34673F972A790BF60027140E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 34673F622A78F4240027140E /* Project object */;
+}

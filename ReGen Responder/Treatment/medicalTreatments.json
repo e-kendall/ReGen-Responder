@@ -1,0 +1,300 @@
+[
+    {
+        "id":"101",
+        "direction":"Keep the person still.",
+        "description":"This is essential as movement can cause damange.",
+        "materialLocation":null,
+        "injuryApplication":"all",
+        "image":"BB_KeepStill"
+    },
+    {
+        "id":"102",
+        "direction":"Provide support and comfort.",
+        "description":"Using a package from P1, place pillows to support the leg and provide comfort for the patient.",
+        "materialLocation":"P1",
+        "injuryApplication":"Right/Left Leg",
+        "image":"BB_Comfort"
+    },
+    {
+        "id":"103",
+        "direction":"Stop the wound from bleeding.",
+        "description":"Stop the wound from bleeding by applying pressure around the edges of the wound with a clean dressing. Dressings can be found in:",
+        "materialLocation":"B1",
+        "injuryApplication":"protrudingBone&Bleeding",
+        "image":"BB_ApplyPressure"
+    },
+    {
+        "id":"104",
+        "direction":"Cover the wound with a clean dressing",
+        "description":"Tightly wrap around the wound using a clean dressing to cover the wound and prevent bleeding. These Dressings can be found in:",
+        "materialLocation":"B2",
+        "injuryApplication":"protrudingBone&Bleeding",
+        "image":"BB_Bandage"
+    },
+    {
+        "id":"105",
+        "direction":"Stop the wound from bleeding.",
+        "description":"Stop the wound from bleeding by applying pressure on the wound with a clean dressing. Dressings can be found in:",
+        "materialLocation":"B1",
+        "injuryApplication":"bleeding",
+        "image":"BB_Bleeding_ApplyPressure"
+    },
+    {
+        "id":"106",
+        "direction":"Cover the wound with a clean dressing",
+        "description":"Tightly wrap over the wound using a clean dressing to cover the wound and prevent bleeding. These Dressings can be found in:",
+        "materialLocation":"B2",
+        "injuryApplication":"bleeding",
+        "image":"BB_Bleeding_Bandage"
+    },
+    {
+        "id":"107",
+        "direction":"Get a Splint",
+        "description":"Use a splint to support the broken bone to immobilise the limb. Splints can be found on the back of me.",
+        "materialLocation":"RR",
+        "injuryApplication":"Right/Left Leg",
+        "image":"BB_GetLegSplint"
+    },
+    {
+        "id":"108",
+        "direction":"Attach a Splint",
+        "description":"Undo the velcro straps located at the top, middle and bottom of the splint, then slide the splint up the leg from the ankle. Once the splint is fully covering the bottom of the patients leg, fold the top over and tighten the velcro straps.",
+        "materialLocation":null,
+        "injuryApplication":"Right/Left Leg",
+        "image":"BB_LegSplint"
+    },
+    {
+        "id":"109",
+        "direction":"Get a Sling",
+        "description":"Use a sling to support the broken bone to immobilise the limb. Bandages can be found in:",
+        "materialLocation":"B3",
+        "injuryApplication":"Right/Left Arm",
+        "image":"BB_GetArmSling"
+    },
+    {
+        "id":"110",
+        "direction":"Attach the Sling",
+        "description":"Take the bandage and lay it in a diamond shape on the patients torso. Then take the top corner and wrap it behind the neck and around to the collarbone/shoulder of the arm thats broken. Then take the bottom corner and fold the bandage up to the top corner ensuring the arm is covered, then tie a knot with the two corners. Tuck the other corners into the sling.",
+        "materialLocation":null,
+        "injuryApplication":"Right/Left Arm",
+        "image":"BB_ArmSling"
+    },
+    {
+        "id":"111",
+        "direction":"Go to the nearest Emergency Department",
+        "description":"Visit the nearest Emergency Department for medical treatment.",
+        "materialLocation":null,
+        "injuryApplication":"protrudingBone&Bleeding",
+        "image":"Travel"
+    },
+    {
+        "id":"112",
+        "direction":"Go to the nearest Medical Practice",
+        "description":"Visit the nearest Medical Practice for medical treatment.",
+        "materialLocation":null,
+        "injuryApplication":"Right/Left Arm",
+        "image":"Travel"
+    },
+    {
+        "id":"113",
+        "direction":"Go to the nearest Emergency Department",
+        "description":"Visit the nearest Emergency Department for medical treatment.",
+        "materialLocation":null,
+        "injuryApplication":"Right/Left Leg",
+        "image":"Travel"
+    },
+    {
+        "id":"201",
+        "direction":"Apply pressure to the wound",
+        "description":"Apply pressure to the wound to minimize bleeding while being mindful of the objects position. Do not remove the object.",
+        "materialLocation":null,
+        "injuryApplication":"all",
+        "image":"PW_ApplyPressure"
+    },
+    {
+        "id":"202",
+        "direction":"Bandage the wound",
+        "description":"Using a package from B1, tightly wrap the wound with a bandage. It is crucial that this wound is tightly wrapped.",
+        "materialLocation":"B1",
+        "injuryApplication":"all",
+        "image":"PW_Bandage"
+    },
+    {
+        "id":"203",
+        "direction":"Raise the wound above the persons heart",
+        "description":"Using packages from P1, try to elevate the area of injury above the patients heart to slow bleeding. Be mindful of the objects position.",
+        "materialLocation":"P1",
+        "injuryApplication":"all",
+        "image":"PW_RaiseWound"
+    },
+    {
+        "id":"204",
+        "direction":"Cover the wound with a clean dressing",
+        "description":"If the dressings are saturated with blood, do not remove them. Tightly wrap a fresh dressing over the original dressing.",
+        "materialLocation":"P1",
+        "injuryApplication":"all",
+        "image":"PW_SaturatedBandage"
+    },
+    {
+        "id":"205",
+        "direction":"Go to the nearest Emergency Department.",
+        "description":"You need to make your way to the nearest Emergency Department for urgent medical care. If the patient cannot be transported safely, dial 000.",
+        "materialLocation":null,
+        "injuryApplication":"all",
+        "image":"Travel"
+    },
+    {
+        "id":"301",
+        "direction":"Clean the Wound",
+        "description":"Using a gauze and an antiseptic to clean the cut. These items can be found in C1. Apply a small amount of antiseptic to the gauze and gently wipe the surface of the wound. Once the bleeding has stopped, using aline to rinse the wound.",
+        "materialLocation":"C1",
+        "injuryApplication":"all",
+        "image":"C_Clean"
+    },
+    {
+        "id":"302",
+        "direction":"Bandage the wound",
+        "description":"Using a bandage, firmly wrap the wound so it's completely covered.",
+        "materialLocation":"B1",
+        "injuryApplication":"all",
+        "image":"C_Wrap"
+    },
+    {
+        "id":"303",
+        "direction":"Visit the nearest Medical Practice",
+        "description":"Make your way to the nearest Medical Practice for further inspection.",
+        "materialLocation":null,
+        "injuryApplication":"all",
+        "image":"Travel"
+    },
+    {
+        "id":"401",
+        "direction":"Protect the persons head.",
+        "description":"Using a package from P2, place a large pillow under the persons head to prevent brain damage. Do not attempt to stop the movement.",
+        "materialLocation":"P2",
+        "injuryApplication":"notConscious",
+        "image":"S_Protect"
+    },
+    {
+        "id":"402",
+        "direction":"Remove any nearby hazards",
+        "description":"Look around for object that could hurt the person having a seizure. Look for sharp objects, furniture and people.",
+        "materialLocation":null,
+        "injuryApplication":"notConscious",
+        "image":"S_Hazards"
+    },
+    {
+        "id":"403",
+        "direction":"Assess Condition",
+        "description":"If the person has returned to consciousness, assess their condition by asking What their name is, What day it is and What their birthday is. If the time on the left was more than 5 minutes ago and the person is still not conscious, you need to call 000 now.",
+        "materialLocation":null,
+        "injuryApplication":"notConscious",
+        "image":"S_AssessCondition"
+    },
+    {
+        "id":"404",
+        "direction":"Go to your GP",
+        "description":"The Patient should visit their GP as soon as possible if they have returned to consciousness within 5 minutes.",
+        "materialLocation":null,
+        "injuryApplication":"notConscious",
+        "image":"Travel"
+    },
+    {
+        "id":"405",
+        "direction":"Sit down in a safe place.",
+        "description":"If you aren't already, sit the patient down so they do not fall.",
+        "materialLocation":null,
+        "injuryApplication":"isConscious",
+        "image":"S_SitDown"
+    },
+    {
+        "id":"406",
+        "direction":"Assess condition.",
+        "description":"If ther seizure has stopped, assess their condition by asking What is their name, What day is it and What is their birthday. If the time on the left was more than 2 miutes ago and the seizure has not stopped, diall 000 now.",
+        "materialLocation":null,
+        "injuryApplication":"isConscious",
+        "image":"S_AssessCondition"
+    },
+    {
+        "id":"407",
+        "direction":"Go to your GP.",
+        "description":"See your GP today or tomorrow to recieve further treatment.",
+        "materialLocation":null,
+        "injuryApplication":"isConscious",
+        "image":"Travel"
+    },
+    {
+        "id":"501",
+        "direction":"Clear Airway",
+        "description":"Check their mouth and throat is clear. Remove any obvious blockages in the mouth or nose, such as vomit, blood, food or loose teeth, then gently tilt their head back and lift their chin.",
+        "materialLocation":null,
+        "injuryApplication":"notConscious&notBreathing&noPulse",
+        "image":"HL_ClearAirway"
+    },
+    {
+        "id":"502",
+        "direction":"Begin CPR",
+        "description":"Before commencing CPR, grab the CPR Mouth Barrier out of C2. Begin chest compressions by placing your left hand in the center of the patients chest and place your right hand over the top, then pushing down with your body weight so your hand sinks into their chest. Repeat this 30 times. After 30 compressions, open their mouth and place the mouth shield over their mouth and blow into the tube twice.",
+        "materialLocation":"C2",
+        "injuryApplication":"notConscious&notBreathing&noPulse",
+        "image":"HL_CPR"
+    },
+    {
+        "id":"503",
+        "direction":"Check for breathing and pulse",
+        "description":"Place your hand near the patients mouth. If you can feel air coming out of the mouth, place the person in the recovery position. If they are not breathing, please continue",
+        "materialLocation":null,
+        "injuryApplication":"notConscious&notBreathing&noPulse",
+        "image":"HL_CheckAfterCPR"
+    },
+    {
+        "id":"504",
+        "direction":"Search for Defibrilator.",
+        "description":"Ask a nearby person to retrieve a Automated Emergency Defibrilator from a cabinet nearby. There is not one in the robot and do not leave the patient. While you are waiting, continue CPR.",
+        "materialLocation":"HL_CPR",
+        "injuryApplication":"notConscious&notBreathing&noPulse",
+        "image":"HL_LookForDefib"
+    },
+    {
+        "id":"505",
+        "direction":"Attach Defibrilator.",
+        "description":"Follow the voice prompts on the defibrillator to revive the patient. Once the patient is conscious, monitor their condition.",
+        "materialLocation":null,
+        "injuryApplication":"notConscious&notBreathing&noPulse",
+        "image":"HL_AttachDefib"
+    },
+    {
+        "id":"506",
+        "direction":"Administer any first aid treatments",
+        "description":"If the person is known to have a repiratory conditon, assist them in taking their appropriate treatment. An example of this is an inhaler for Asthma or an Epipen for an allergy. This this treatment works, please skip to the end.",
+        "materialLocation":null,
+        "canSkip":true,
+        "injuryApplication":"notConscious&notBreathing&noPulse",
+        "image":"HL_FirstAidTreatments"
+    },
+    {
+        "id":"510",
+        "direction":"Search for Defibrilator",
+        "description":"Ask a nearby person to get a defibrilator, it is essential that you do not leave the patient.",
+        "materialLocation":null,
+        "injuryApplication":"isConscious&notBreathing",
+        "image":"HL_LookForDefib"
+    },
+    {
+        "id":"511",
+        "direction":"Attach Defibrilator.",
+        "description":"Follow the voice prompts on the defibrillator to revive the patient. Once the patient is conscious, monitor their condition.",
+        "materialLocation":null,
+        "injuryApplication":"isConscious&notBreathing",
+        "image":"HL_AttachDefib"
+    },
+    {
+        "id":"512",
+        "direction":"Go to the Nearest Emergency Department.",
+        "description":"Go to your nearest Emergency Department immediatley to recieve further treatment.",
+        "materialLocation":null,
+        "injuryApplication":"isConscious&notBreathing",
+        "image":"Travel"
+    }
+]
+
